@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LDT Game On Recital</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+
+<style>
+  /* Reset & global */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* start from top */
+    align-items: center;
+    padding-top: 50px; /* space from top */
+  }
+
+  /* Center image */
+  .center-image {
+    max-width: 90%;
+    max-height: 70vh; /* never exceed 70% of viewport height */
+    height: auto;
+    margin-bottom: 50px; /* spacing from button */
+    border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .center-image:hover {
+    transform: scale(1.03);
+  }
+
+  /* PRESS START Button */
+  .btn-start {
+    color: white;
+    background: black;
+    padding: 15px 50px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    border: 2px solid #474ed2;
+    text-decoration: none;
+    cursor: pointer;
+
+    /* Glow effect for button only */
+    box-shadow: 0 0 8px #474ed2, 0 0 16px #c300e2;
+    text-shadow: 0 0 4px #474ed2, 0 0 8px #c300e2;
+
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-start:hover {
+    background: #474ed2;
+    border-color: #c300e2;
+    transform: scale(1.07);
+    box-shadow: 0 0 14px #474ed2, 0 0 28px #c300e2;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .btn-start { font-size: 20px; padding: 12px 40px; }
+    .center-image { margin-bottom: 40px; max-height: 65vh; }
+  }
+
+  @media (max-width: 480px) {
+    .btn-start { font-size: 18px; padding: 10px 30px; }
+    .center-image { margin-bottom: 30px; max-height: 60vh; }
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- Main Image -->
+  <img src="images/bookletcover.jpg" alt="Game On" class="center-image">
+
+  <!-- Press Start Button -->
+  <a href="welcome.html" class="btn-start">Press Start</a>
+
+</body>
+</html>
